@@ -1,0 +1,4 @@
+<aura:component >
+    <c:devGameList/>
+    <c:searchResults/>
+</aura:component>

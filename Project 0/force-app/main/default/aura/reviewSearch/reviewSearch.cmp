@@ -1,0 +1,32 @@
+<aura:component>
+    <aura:registerEvent name="searchResults" type="c:searchEvent"/>
+    <aura:attribute name="searchTerm" type="String"/>
+    <aura:attribute name="results" type="Game_Reviews__c[]" />
+    
+    <div class="slds-form-element__control
+                slds-input-has-icon 
+                slds-input-has-icon_left">
+        
+        <form id="search-bar" class="slds-form--stacked 
+                                     slds-grid
+                                     slds-align_absolute-center">
+            <lightning:input  aura:id='reviewSearch'
+                              type='search'
+                              label="Seach for a Review"
+                              value="{!v.searchTerm}"
+                              required="true"
+                              messageWhenValueMissing="Please give Full Name of the Game"
+                              class="slds-input
+                                     slds-p-bottom_small
+                                     slds-p-right_x-large
+                                     slds-m-right_medium
+                                     slds-m-top_x-small
+                                     slds-size_9-of-12" />
+            <lightning:button label="Search"
+                              variant="brand"
+                              onclick="{!c.clickSearchReviews}"
+                              class="slds-button
+                                     slds-size_1-of-12"/>
+        </form>
+    </div>
+</aura:component>

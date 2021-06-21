@@ -5,6 +5,6 @@
     <label>Game Order Approvers</label>
     <queue>Game_Order_Approvers</queue>
     <sharedTo>
-        <allInternalUsers></allInternalUsers>
+        <allInternalUsers/>
     </sharedTo>
 </ListView>

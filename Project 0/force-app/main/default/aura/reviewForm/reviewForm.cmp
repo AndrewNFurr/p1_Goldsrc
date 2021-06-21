@@ -1,0 +1,14 @@
+<aura:component >
+    <aura:attribute name="game" type="Game__c"/>
+    <aura:attribute name="newReview" type="Game_Reviews__c"/>
+    
+	<lightning:recordEditForm objectApiName="Game_Reviews__c" aura:id="createReview">
+    	<lightning:inputField fieldName="Name" />
+        <lightning:outputField value="{!v.game.Name}" />
+        <lightning:inputField fieldName="Reviewer__c" />
+        <lightning:inputField fieldName="Review__c" />
+        <lightning:inputField fieldName="User_Star_Rating__c" />
+        
+        <lightning:button class="slds-m-top_small" type="submit" label="Submit Review" />
+    </lightning:recordEditForm>
+</aura:component>
