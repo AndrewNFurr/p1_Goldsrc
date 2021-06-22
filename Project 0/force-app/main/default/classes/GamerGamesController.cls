@@ -3,7 +3,7 @@ public class GamerGamesController
     public Game_Account__c gamer{get; set;}//create Game_account__c named gamer
     public List<My_Games__c> gamerGames {get; set;}//create list of games from My_games__c custom object
     public Game_Reviews__c gameReview {get; set;}
-    
+   
     public GamerGamesController()
     {
         //setting gamer equal to the current user
@@ -29,8 +29,4 @@ public class GamerGamesController
                  system.debug(ex);
 	 		}
     }
-    
-	
-
-
 }

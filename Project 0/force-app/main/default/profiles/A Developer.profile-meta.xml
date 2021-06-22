@@ -79,6 +79,11 @@
     </classAccesses>
     <classAccesses>
         <apexClass>GamerGamesControllerTestClass</apexClass>
+        <apexClass>GamerAccountInfoControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>GamerGamesController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -263,6 +268,11 @@
         <editable>true</editable>
         <field>Game_Reviews__c.Game__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Game_Reviews__c.Game__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -510,6 +520,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>MyProfilePage</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>My_First_Page</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>

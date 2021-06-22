@@ -118,7 +118,7 @@
             <targetReference>Get_Game_Details</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>GameOrderProcessInput</name>
         <dataType>SObject</dataType>
