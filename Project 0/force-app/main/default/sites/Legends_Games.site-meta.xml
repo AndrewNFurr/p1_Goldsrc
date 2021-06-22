@@ -22,8 +22,8 @@
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <requireHttps>true</requireHttps>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>matthew.hennig@creative-goat-iur2xp.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>matthew.hennig@creative-goat-iur2xp.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>jlfaaborg@empathetic-hawk-9tfiot.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>jlfaaborg@empathetic-hawk-9tfiot.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
     <subdomain>legendgames-developer-edition</subdomain>
 </CustomSite>
