@@ -78,7 +78,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>GamerGamesControllerTestClass</apexClass>
         <apexClass>GamerAccountInfoControllerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
