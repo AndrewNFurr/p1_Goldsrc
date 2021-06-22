@@ -13,7 +13,6 @@
         <faultConnector>
             <targetReference>Error</targetReference>
         </faultConnector>
-        <flowTransactionModel>Automatic</flowTransactionModel>
         <inputParameters>
             <name>a</name>
             <value>
@@ -21,7 +20,6 @@
             </value>
         </inputParameters>
     </actionCalls>
-    <apiVersion>51.0</apiVersion>
     <assignments>
         <name>Create_Game_Review_Record</name>
         <label>Create Game Review Record</label>
@@ -70,7 +68,6 @@
         <name>GameChoices</name>
         <dataType>String</dataType>
         <displayField>Game_Title__c</displayField>
-        <filterLogic>and</filterLogic>
         <filters>
             <field>Game_Account__c</field>
             <operator>EqualTo</operator>
@@ -111,7 +108,6 @@
         <connector>
             <targetReference>GetUsersGames</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
         <filters>
             <field>OwnerId</field>
             <operator>EqualTo</operator>
@@ -132,7 +128,6 @@
         <connector>
             <targetReference>Review_Screen</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
         <filters>
             <field>Game_Account__c</field>
             <operator>EqualTo</operator>
@@ -214,7 +209,6 @@
                     <stringValue>My_Game__c</stringValue>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>

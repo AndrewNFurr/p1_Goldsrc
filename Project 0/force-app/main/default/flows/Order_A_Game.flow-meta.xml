@@ -13,7 +13,6 @@
         <faultConnector>
             <targetReference>OrderErrorScreen</targetReference>
         </faultConnector>
-        <flowTransactionModel>Automatic</flowTransactionModel>
         <inputParameters>
             <name>Order</name>
             <value>
@@ -21,7 +20,6 @@
             </value>
         </inputParameters>
     </actionCalls>
-    <apiVersion>51.0</apiVersion>
     <assignments>
         <name>Order_Set_Information</name>
         <label>Order Set Information</label>
@@ -89,7 +87,6 @@
         <connector>
             <targetReference>OrderFlowScreen1</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
         <filters>
             <field>OwnerId</field>
             <operator>EqualTo</operator>
@@ -176,7 +173,6 @@
                     <stringValue>Game__c</stringValue>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
@@ -207,7 +203,6 @@
                     <stringValue>Game_Payment__c</stringValue>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>

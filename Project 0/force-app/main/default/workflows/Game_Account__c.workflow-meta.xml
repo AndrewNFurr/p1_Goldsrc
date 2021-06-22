@@ -26,7 +26,7 @@
             <name>Account_Created</name>
             <type>Alert</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Game_Account__c.Name</field>
             <operation>notEqual</operation>
