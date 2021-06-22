@@ -31,6 +31,10 @@
                 <componentName>flowruntime:interview</componentName>
             </componentInstance>
         </itemInstances>
+        <name>left</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -44,47 +48,6 @@
                 <componentName>flowruntime:interview</componentName>
             </componentInstance>
         </itemInstances>
-<<<<<<< Updated upstream
-        <name>left</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>height</name>
-                    <value>300</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>pageName</name>
-                    <value>DeveloperPageForGames</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showLabel</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:visualforcePage</componentName>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>height</name>
-                    <value>300</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>pageName</name>
-                    <value>GamerAccountInfo</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showLabel</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:visualforcePage</componentName>
-            </componentInstance>
-        </itemInstances>
-=======
->>>>>>> Stashed changes
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

@@ -1,32 +1,33 @@
-<apex:page controller="GamerAccountInfoController" lightningStylesheets="true">
-    <apex:slds />
+<apex:page controller="GamerAccountInfoController" docType="html-5.0">  
     <apex:pageBlock >
-    <!--Display Table of Games-->
-        <apex:repeat value="{!account}" var="accts">
-        <apex:pageBlockTable value="{!accts}" var="acct">
-            <apex:column headerValue="Username">
-                <apex:outputLink value="/{!acct}">{!acct.Name}</apex:outputLink>
-            </apex:column>
-            <apex:column headerValue="About Me">{!acct.About_ME__c}</apex:column>
-            <apex:column headerValue="Email">{!acct.Email__c}</apex:column>
-            <apex:column headerValue="Date Of Birth">{!acct.Date_Of_Birth__c}</apex:column>
-        </apex:pageBlockTable>
-            </apex:repeat>
-        <br/>
-        <apex:repeat value="{!account}" var="accts">
-        <apex:pageBlockTable value="{!accts}" var="acct">
-            <apex:column headerValue="Address 1">{!acct.Address_1__c}</apex:column>
-            <apex:column headerValue="Address 2">{!acct.Address_2__c}</apex:column>
-            <apex:column headerValue="City">{!acct.City__c}</apex:column>
-            <apex:column headerValue="State">{!acct.State__c}</apex:column>
-            <apex:column headerValue="Country">{!acct.Country__c}</apex:column>
-        </apex:pageBlockTable>
-            </apex:repeat>
-     </apex:pageBlock>
-</apex:page>
-
-<!--
+    <!--Display Table of Games-->        
+        <apex:pageBlockTable value="{!account}" var="acct">
             <apex:column headerValue="Account">
                 <apex:outputLink value="/{!acct}">{!acct}</apex:outputLink>
             </apex:column>
-<apex:column headerValue="Name">{!acct.Name}</apex:column> -->
+            <apex:column headerValue="Name">{!acct.Name}</apex:column>
+            <apex:column headerValue="About Me">{!acct.About_ME__c}</apex:column>
+            <apex:column headerValue="Address">{!acct.Address_1__c}</apex:column>
+            <apex:column headerValue="DOB">{!acct.Date_Of_Birth__c}</apex:column>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    <apex:form >
+        <apex:pageBlock title="Edit Account">
+            <apex:pageBlockSection >
+                <apex:inputField value="{!account.Name }"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:inputField label="About Me" value="{!account.About_ME__c }"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!account.Address_1__c }"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!account.Date_Of_Birth__c }"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save }" value="Save" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

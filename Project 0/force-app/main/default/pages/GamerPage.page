@@ -1,9 +1,4 @@
-<<<<<<< Updated upstream
-<apex:page controller="GamerGamesController" lightningStylesheets="true">
-    <apex:slds />
-=======
 <apex:page controller="GamerGamesController" >  
->>>>>>> Stashed changes
     <apex:pageBlock >
     <!--Display Table of Games-->
         <apex:pageBlockTable value="{!gamerGames}" var="gg">
