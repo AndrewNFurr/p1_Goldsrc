@@ -1,6 +1,9 @@
-<apex:page controller="GamerGamesController" >  
+<apex:page controller="GamerGamesController" lightningStylesheets="true">
+    <apex:slds />
+    
+    <h1>Your Games</h1>
     <apex:pageBlock >
-    <!--Display Table of Games-->
+    	<!--Display Table of Games-->
         <apex:pageBlockTable value="{!gamerGames}" var="gg">
             <apex:column headerValue="Game">
                 <apex:outputLink value="/{!gg}">{!gg.Name}</apex:outputLink>
@@ -8,6 +11,20 @@
             <apex:column value="{!gg.Game_Description__c}"/>
             <apex:column value="{!gg.Developer__c}"/>
             <apex:column value="{!gg.Publisher__c}"/> 
+            <flow:interview name="Add_Game_Review"/>
         </apex:pageBlockTable>
     </apex:pageBlock>
-</apex:page>
+    
+    <apex:form >
+       <apex:pageBlock title="Submit a Review">
+        <apex:pageBlockSection >
+            <apex:inputField value="{!gameReview.Name }"/>
+            <apex:inputField value="{!gameReview.Review__c }"/>
+            <apex:inputField value="{!gameReview.User_Star_Rating__c }"/>
+            <apex:inputField value="{!gameReview.My_Game__c }"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons location="bottom">
+            <apex:commandButton action="{!CreateReview}" value="Submit Review" />
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+    </apex:form>

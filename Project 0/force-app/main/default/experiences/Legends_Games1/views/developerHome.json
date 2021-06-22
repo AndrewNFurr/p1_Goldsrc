@@ -1,0 +1,71 @@
+{
+  "appPageId" : "7255ddac-ed7e-456e-b44d-d310ec9840da",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "01f4f305-976c-4060-9c34-3aefa3d2ff24",
+  "label" : "Developer Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "66e9b3e3-5787-4a44-ab80-2a26c36f6af4",
+          "columns" : [ {
+            "UUID" : "ab3aa129-5de0-4092-83dc-dfec5172cf16",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "66e9b3e3-5787-4a44-ab80-2a26c36f6af4",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "300",
+            "pageName" : "DeveloperPageForGames",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:visualforcePage",
+          "id" : "30048211-ac38-4d33-ac42-752c13dfda59",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ab3aa129-5de0-4092-83dc-dfec5172cf16",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "352956f4-8e41-4587-9033-43b38caa013d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0a4df853-da11-45ec-83c3-f332c302eb24",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "431ac8ea-98a7-41cd-9b3d-dd8d9f2fdbf7",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "cb929b6f-e4e8-4ee2-a5be-355543363360",
+    "propertyOverrides" : {
+      "activeViewId" : "91a2f00b-208e-4d27-9320-7fd325312e7d"
+    },
+    "targetId" : "974dee66-bfa6-4165-bb39-ce02cbdb5ea4",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_Gamer_Home_Page",
+  "id" : "742b687c-2d8b-4fef-a860-b249d9c067cb",
+  "type" : "experienceVariation"
+}

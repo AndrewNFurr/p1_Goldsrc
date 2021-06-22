@@ -144,11 +144,29 @@
         <members>Game_Refunds__c-Game Rufund Layout</members>
         <name>Layout</name>
     </types>
-        <types>
+    <types>
         <members>Game__c.Order_Game</members>
         <members>My_Games__c.Review_Game</members>
         <name>QuickAction</name>
     </types>
+    <!-- Experience Cloud site Meta types-->
+    <types>
+        <members>*</members>
+        <name>Network</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomSite</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ExperienceBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>NavigationMenu</name>
+    </types>
+
 
     <version>51.0</version>
 </Package>

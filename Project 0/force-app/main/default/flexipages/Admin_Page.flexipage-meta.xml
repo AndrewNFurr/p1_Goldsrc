@@ -31,10 +31,6 @@
                 <componentName>flowruntime:interview</componentName>
             </componentInstance>
         </itemInstances>
-        <name>left</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

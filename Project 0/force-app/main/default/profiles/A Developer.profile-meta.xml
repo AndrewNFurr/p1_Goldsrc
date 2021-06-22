@@ -74,6 +74,11 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>GamerGamesController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>GamerGamesControllerTestClass</apexClass>
         <apexClass>GamerAccountInfoControllerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -260,6 +265,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Game_Reviews__c.Game__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Game_Reviews__c.Game__c</field>
         <readable>false</readable>
@@ -295,7 +305,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Game__c.Game_Approval__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -466,7 +476,7 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>DeveloperPageForGames</apexPage>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
         <apexPage>Exception</apexPage>
@@ -490,7 +500,7 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>GameSearchPage</apexPage>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
         <apexPage>GamerAccountInfo</apexPage>

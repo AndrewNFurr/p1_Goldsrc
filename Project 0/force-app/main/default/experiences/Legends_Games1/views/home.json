@@ -1,0 +1,72 @@
+{
+  "appPageId" : "7255ddac-ed7e-456e-b44d-d310ec9840da",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "id" : "aa0d018e-062b-4112-9b94-0ef1efa40ebd",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "A place where you can easily find solutions and ask questions",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Welcome!",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "2f6219f3-0fc3-4382-b51b-de65f293b048",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "height" : "300",
+        "pageName" : "GameSearchPage",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:visualforcePage",
+      "id" : "15b62c57-c47b-425d-ad8e-8d5894c4f548",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ed527cfe-c3ef-464c-9d40-b8af9185148b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "007cfd44-b3c6-4970-9d99-dfaf8d9f42e0",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "id" : "6a732ba3-e896-4e1d-a762-05288a0f7407",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "a6764e82-3f32-4868-9bf6-7dca329d3aea",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "64ec6f5d-e92c-42f6-b8d7-4ffe7b46d0b8",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c2d12e27-de75-49bf-bebf-95261fe1c765",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b0238080-8671-4eb1-b484-448d97120353",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}
