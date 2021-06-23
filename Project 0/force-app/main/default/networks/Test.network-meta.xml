@@ -4,12 +4,12 @@
     <allowMembersToFlag>false</allowMembersToFlag>
     <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
     <communityRoles/>
-    <disableReputationRecordConversations>false</disableReputationRecordConversations>
+    <disableReputationRecordConversations>true</disableReputationRecordConversations>
     <emailSenderAddress>jlfaaborg@gmail.com</emailSenderAddress>
-    <emailSenderName>Legends Games</emailSenderName>
+    <emailSenderName>Test</emailSenderName>
     <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
     <enableDirectMessages>true</enableDirectMessages>
-    <enableGuestChatter>true</enableGuestChatter>
+    <enableGuestChatter>false</enableGuestChatter>
     <enableGuestFileAccess>false</enableGuestFileAccess>
     <enableGuestMemberVisibility>false</enableGuestMemberVisibility>
     <enableInvitation>false</enableInvitation>
@@ -36,15 +36,15 @@
         <loginPageOverrideSetting>Designer</loginPageOverrideSetting>
         <selfRegProfilePageOverrideSetting>Designer</selfRegProfilePageOverrideSetting>
     </networkPageOverrides>
-    <picassoSite>Legends_Games1</picassoSite>
+    <picassoSite>Test1</picassoSite>
     <selfRegistration>false</selfRegistration>
     <sendWelcomeEmail>true</sendWelcomeEmail>
-    <site>Legends_Games</site>
+    <site>Test</site>
     <status>UnderConstruction</status>
     <tabs>
         <defaultTab>home</defaultTab>
         <standardTab>Chatter</standardTab>
     </tabs>
-    <urlPathPrefix>LegendGames</urlPathPrefix>
+    <urlPathPrefix>test</urlPathPrefix>
     <welcomeTemplate>unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>
 </Network>

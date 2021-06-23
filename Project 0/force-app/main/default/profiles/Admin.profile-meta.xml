@@ -82,6 +82,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>GamerGamesControllerTestClass</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>LightningForgotPasswordController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -257,11 +261,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Game_Payment__c.Game_Payment_Look_Up__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Game_Reviews__c.Game__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
