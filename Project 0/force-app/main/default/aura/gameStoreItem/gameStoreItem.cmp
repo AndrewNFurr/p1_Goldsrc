@@ -1,0 +1,43 @@
+<aura:component controller="gameLibraryController">
+    <aura:attribute name="myStoreGame" type="Game__c" />
+    <aura:attribute name="isShow" type="Boolean" default="false"/>
+    <aura:attribute name="disableButton" type="Boolean" default="false"/>
+    <aura:attribute name="isOwned" type="Boolean"/>
+    <aura:attribute name="isBought" type="Boolean"/>
+    <div>
+    	<c:gameItem game="{!v.myStoreGame}" />
+        <input type="button" value="View Details" onclick = "{!c.detail}" />
+    </div>
+    
+    <div>            
+        <aura:if isTrue="{!v.isShow}">
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header><!--{!v.Game__c.Name}-->
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{!v.myStoreGame.Name}</h2>
+                    </header>
+                    <!--###### MODAL BOX BODY Part Start######-->
+                    <p>Genre: {!v.myStoreGame.Genre__c}</p>
+                    <p>Description: {!v.myStoreGame.Game_Description__c}</p>
+                    <p>Developer: {!v.myStoreGame.Developer__c}</p>
+                    <p>Price: {!v.myStoreGame.Price__c}</p>
+                    <p>Rating: {!v.myStoreGame.Game_User_Rating__c}</p>
+                    
+                    <footer>
+                        <input type="button" value="Close" onclick = "{!c.closeDetail}" />
+                        <input type="button"  value="Buy" onclick = "{!c.buyGame}" disabled="{!v.disableButton}"/>
+                    </footer>
+                    <aura:if isTrue="{!v.isOwned}">
+                    	<p>You Already Owned This Game</p>
+                    </aura:if>
+                    <aura:if isTrue="{!v.isBought}" >
+                    	<p>Thank You For Purchasing</p>
+                    </aura:if>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+            <!--###### MODAL BOX Part END Here ######-->
+            
+        </aura:if>
+    </div>
+</aura:component>

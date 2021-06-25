@@ -1,11 +1,11 @@
 <aura:component >
     <aura:attribute name="game" type = "Game__c" />
     <div>
-  		<div class="slds-card">
-    		<div class="slds-p-around_medium">Name: {!v.game.Name}</div>
+  		<div>
+            <p>Name: {!v.game.Name}</p>
   		</div>
-  		<div class="slds-card">
-    		<div class="slds-p-around_medium">Genre: {!v.game.Genre__c}</div>
+  		<div >
+            <p>Genre: {!v.game.Genre__c}</p>
   		</div>
 	</div>
     

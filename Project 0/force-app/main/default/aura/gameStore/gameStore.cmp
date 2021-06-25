@@ -1,11 +1,11 @@
 <aura:component controller="gameLibraryController">
-    <aura:attribute name="myGames" type="Game__c[]" />
+	<aura:attribute name="myGames" type="Game__c[]" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <p>Game Library: </p>
     <br />
     <aura:iteration items="{!v.myGames}" var="game">
     	<div>
-  			<c:gameItem game="{!game}" />
+  			<c.gameStoreItem myStoreGame="{!game}" />
             <br />
 		</div>
     </aura:iteration>
