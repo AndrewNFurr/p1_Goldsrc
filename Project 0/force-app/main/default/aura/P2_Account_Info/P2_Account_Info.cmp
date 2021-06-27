@@ -1,4 +1,4 @@
-<aura:component>
+<aura:component controller="AccountComponentController">
     <aura:attribute name="recordId" type="string" />
     <aura:handler name="init" value="{!this}" action="{!c.init}"/>
 	<lightning:recordEditForm 
@@ -10,13 +10,13 @@
                     <lightning:inputField fieldName="Name"/>
                 </div>
                 <div class="slds-col slds-size_1-of-4">
-                    <lightning:inputField fieldName="Address_1__c"/>
+                    <lightning:inputField fieldName="About_ME__c"/>
                 </div>
             	<div class="slds-col slds-size_1-of-4">
-                    <lightning:inputField fieldName="City__c"/>
+                    <lightning:inputField fieldName="Address_1__c"/>
                 </div>
                 <div class="slds-col slds-size_1-of-4">
-                    <lightning:inputField fieldName="Country__c"/>
+                    <lightning:inputField fieldName="Date_Of_Birth__c"/>
                 </div>
             	<div class="slds-col slds-size_1-of-4">
                     <lightning:inputField fieldName="First_Name__c"/>
