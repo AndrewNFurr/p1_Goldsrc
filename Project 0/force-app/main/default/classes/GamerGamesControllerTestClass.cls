@@ -1,0 +1,8 @@
+@isTest
+private class GamerGamesControllerTestClass 
+{
+    
+    
+    
+
+}
