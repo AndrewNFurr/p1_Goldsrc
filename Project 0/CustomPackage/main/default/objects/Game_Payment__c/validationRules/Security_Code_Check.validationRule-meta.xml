@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Security_Code_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( REGEX( Card_Security_Code__c  , 
+&quot;((\\d{3}))?&quot; ))</errorConditionFormula>
+    <errorDisplayField>Card_Security_Code__c</errorDisplayField>
+    <errorMessage>Security Code Invalid</errorMessage>
+</ValidationRule>

@@ -1,7 +1,7 @@
 <aura:component controller="DevGameListController">
     <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
     <aura:attribute name='games' type="Game__c[]" />
-    
+    <c:reviewForm/>
     <lightning:card>
         <div class="slds-align_absolute-center slds-grid slds-grid_vertical">
             <header class="slds-card__header slds-col">

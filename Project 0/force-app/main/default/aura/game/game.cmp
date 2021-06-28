@@ -26,11 +26,13 @@
                      <td> {!v.game.Game_User_Rating__c}</td>
                      <td> {!v.game.Publisher__c}</td>
                      <td> {!v.game.Developer__c}</td>
+
                      <aura:if isTrue="{!v.button}">
                      <td><lightning:button variant="brand"
                                            label="Review this Game"
                                            onclick="{!c.clickChooseGame}"/></td>
                      </aura:if>
+
                      </tr>
                  </tbody>
  			</table>

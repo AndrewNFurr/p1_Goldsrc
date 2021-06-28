@@ -1,0 +1,23 @@
+<apex:page controller="GamerGamesController" lightningStylesheets="true">
+    <apex:slds />
+    
+    <h1>Your Games</h1>
+    <apex:pageBlock >
+    	<!--Display Table of Games-->
+        <apex:pageBlockTable value="{!gamerGames}" var="gg">
+            <apex:column headerValue="Game">
+                <apex:outputLink value="/{!gg}">{!gg.Name}</apex:outputLink>
+            </apex:column>
+            <apex:column value="{!gg.Game_Description__c}"/>
+            <apex:column value="{!gg.Developer__c}"/>
+            <apex:column value="{!gg.Publisher__c}"/> 
+            <flow:interview name="Add_Game_Review"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    
+    <h1>
+        Your Account
+    </h1>
+        
+    
+</apex:page>
