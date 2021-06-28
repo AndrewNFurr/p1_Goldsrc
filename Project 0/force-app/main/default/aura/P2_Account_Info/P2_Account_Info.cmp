@@ -4,34 +4,35 @@
 	<lightning:recordEditForm 
         recordId = "{!v.recordId}"
         objectApiName="Game_Account__c">
+        
     	<lightning:messages />
-        <div class="slds-grid">
-                <div class="slds-col slds-size_1-of-4">
-                    <lightning:inputField fieldName="Name"/>
+        <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-1">
+                    <lightning:inputField fieldName="Name" class="Test"/>
                 </div>
-                <div class="slds-col slds-size_1-of-4">
+                <div class="slds-col slds-size_1-of-1">
                     <lightning:inputField fieldName="About_ME__c"/>
                 </div>
-            	<div class="slds-col slds-size_1-of-4">
+            	<div class="slds-col slds-size_1-of-2">
                     <lightning:inputField fieldName="Address_1__c"/>
                 </div>
-                <div class="slds-col slds-size_1-of-4">
+                <div class="slds-col slds-size_1-of-2">
                     <lightning:inputField fieldName="Date_Of_Birth__c"/>
                 </div>
-            	<div class="slds-col slds-size_1-of-4">
+            	<div class="slds-col slds-size_1-of-2">
                     <lightning:inputField fieldName="First_Name__c"/>
                 </div>
-                <div class="slds-col slds-size_1-of-4">
+                <div class="slds-col slds-size_1-of-2">
                     <lightning:inputField fieldName="Last_Name__c"/>
                 </div>
-            	<div class="slds-col slds-size_1-of-4">
+            	<div class="slds-col slds-size_1-of-2">
                     <lightning:inputField fieldName="Email__c"/>
                 </div>
-                <div class="slds-col slds-size_1-of-4">
+                <div class="slds-col slds-size_1-of-2">
                     <lightning:inputField fieldName="Phone_Number__c"/>
                 </div>
             </div>
-        <lightning:button class="slds-m-top_small" type="submit" label="Save" />
+        <lightning:button class="slds-m-top_small" variant="brand" type="submit" label="Save" onclick="{!c.handleClick}" />
     </lightning:recordEditForm>
   
 </aura:component>

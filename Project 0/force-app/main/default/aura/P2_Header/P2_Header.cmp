@@ -1,3 +1,5 @@
 <aura:component >
-	
+	<div>
+    	<h1>Welcome To Your Account!</h1>
+    </div>
 </aura:component>

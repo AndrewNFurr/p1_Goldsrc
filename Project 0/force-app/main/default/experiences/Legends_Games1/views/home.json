@@ -1,53 +1,84 @@
 {
-  "appPageId" : "7255ddac-ed7e-456e-b44d-d310ec9840da",
+  "appPageId" : "329a6d96-e4a3-428a-b7be-2005e8decb67",
   "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
-  "id" : "aa0d018e-062b-4112-9b94-0ef1efa40ebd",
+  "id" : "d2e519eb-a425-42a8-9e89-84c6c5c505a8",
   "label" : "Home",
   "regions" : [ {
     "components" : [ {
       "componentAttributes" : {
-        "bannerText" : "A place where you can easily find solutions and ask questions",
-        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
-        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerText" : "Welcome To Legends Game",
+        "bannerTextWithKnowledge" : "",
+        "bannerTextWithoutKnowledge" : "",
         "pageType" : "",
-        "showSubTopics" : true,
+        "showSubTopics" : false,
         "title" : "Welcome!",
         "uniqueNameOrId" : ""
       },
       "componentName" : "forceCommunity:headline",
-      "id" : "2f6219f3-0fc3-4382-b51b-de65f293b048",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
-    }, {
-      "componentAttributes" : {
-        "height" : "300",
-        "pageName" : "GameSearchPage",
-        "recordId" : "{!recordId}"
-      },
-      "componentName" : "forceCommunity:visualforcePage",
-      "id" : "15b62c57-c47b-425d-ad8e-8d5894c4f548",
+      "id" : "d55b8918-e51c-4ce8-ad04-a936a441e50f",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "ed527cfe-c3ef-464c-9d40-b8af9185148b",
+    "id" : "bb42673c-1420-43d6-a144-7e54acfd6ff0",
     "regionName" : "header",
     "type" : "region"
   }, {
-    "id" : "007cfd44-b3c6-4970-9d99-dfaf8d9f42e0",
+    "components" : [ {
+      "componentAttributes" : {
+        "flowArguments" : "[]",
+        "flowLayout" : "oneColumn",
+        "flowName" : "setup_service_experience__Reset_Pwd"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "8ca9adcf-4074-40df-a620-bc0deafa49fd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bcea41f3-5a61-4b67-966a-cd3490e17c9b",
     "regionName" : "featured",
     "type" : "region"
   }, {
-    "id" : "6a732ba3-e896-4e1d-a762-05288a0f7407",
+    "components" : [ {
+      "componentAttributes" : {
+        "height" : "500",
+        "pageName" : "GamerAccountInfo",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:visualforcePage",
+      "id" : "525f77ed-0b11-41d3-8f38-7c91efc87ab0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f99e9237-3732-470d-b0b0-c8102ff79037",
     "regionName" : "content",
     "type" : "region"
   }, {
-    "id" : "a6764e82-3f32-4868-9bf6-7dca329d3aea",
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 100,
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "label" : "Contact Support"
+      },
+      "componentName" : "forceCommunity:contactSupportButton",
+      "id" : "f050e878-48ca-4e47-bea4-23804916ed73",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3188738f-c527-478a-893c-a9eb04c51e2c",
     "regionName" : "sidebar",
     "type" : "region"
   }, {
-    "id" : "64ec6f5d-e92c-42f6-b8d7-4ffe7b46d0b8",
+    "id" : "75de76f4-6db5-4983-b8cb-5a9e5db44a32",
     "regionName" : "footer",
     "type" : "region"
   }, {
@@ -58,11 +89,11 @@
         "title" : "Home"
       },
       "componentName" : "forceCommunity:seoAssistant",
-      "id" : "c2d12e27-de75-49bf-bebf-95261fe1c765",
+      "id" : "315a7401-6127-42fc-8cb7-6a2745d6df9b",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "b0238080-8671-4eb1-b484-448d97120353",
+    "id" : "2bb540b3-0a7e-4be0-959b-729c34a00c9a",
     "regionName" : "sfdcHiddenRegion",
     "type" : "region"
   } ],

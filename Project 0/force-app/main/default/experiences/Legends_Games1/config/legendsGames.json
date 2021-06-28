@@ -1,11 +1,11 @@
 {
-  "forgotPasswordRouteId" : "f1448889-dbe1-4c21-8c3d-778acea42d96",
+  "forgotPasswordRouteId" : "83589f04-9846-4846-a82d-ee8dc654f0cf",
   "isAvailableToGuests" : false,
   "isFilteredComponentsView" : false,
   "isProgressiveRenderingEnabled" : false,
-  "loginAppPageId" : "ad9b687f-e6ad-4040-8c56-92901f1a9991",
-  "mainAppPageId" : "7255ddac-ed7e-456e-b44d-d310ec9840da",
+  "loginAppPageId" : "4d124e70-0dc5-4084-aa3a-2411ab74b90a",
+  "mainAppPageId" : "329a6d96-e4a3-428a-b7be-2005e8decb67",
   "preferredDomain" : "none",
-  "selfRegistrationRouteId" : "a02f0c10-8d0c-4ffa-b8c6-70c14b915ff5",
+  "selfRegistrationRouteId" : "14c43561-7c3b-4497-875f-5767593203a2",
   "type" : "site"
 }
