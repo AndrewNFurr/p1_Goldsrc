@@ -1,8 +1,8 @@
 ({
 	handleChoice : function(component, event, helper) {
-        console.log('in deh');
+
         let game = event.getParam("gameChoice");
-        console.log(game);
+
 		let action = component.get("c.getSingleGame");
         action.setParams({"gameName":game});
         action.setCallback(this, function(response) {
@@ -14,5 +14,14 @@
             }
         });
         $A.enqueueAction(action);
-	}
+
+	},
+    displayFalse : function(component, event, helper) {
+    	component.set("v.display", false);
+	},
+    submit : function(component, event, helper) {
+        component.find("createReview").submit();
+        component.set("v.display", false);
+    }
+
 })

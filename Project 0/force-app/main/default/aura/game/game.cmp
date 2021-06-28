@@ -1,7 +1,8 @@
 <aura:component implements="flexipage:availableForRecordHome,force:hasRecordId">
     <aura:registerEvent name="choseGame" type="c:choseGame" />
     <aura:attribute name="game" type="Game__c"/>
-   
+    <aura:attribute name="button" type="Boolean" default="true"/>
+
     <lightning:recordViewForm recordId="{!v.game.Id}" objectApiName="Game__c" class="slds-p-bottom_small">
         <div class="slds-box slds-grid slds-grid_horizontal">
             <table class="slds-table slds-table--bordered slds-table--striped">
@@ -25,9 +26,13 @@
                      <td> {!v.game.Game_User_Rating__c}</td>
                      <td> {!v.game.Publisher__c}</td>
                      <td> {!v.game.Developer__c}</td>
+
+                     <aura:if isTrue="{!v.button}">
                      <td><lightning:button variant="brand"
                                            label="Review this Game"
                                            onclick="{!c.clickChooseGame}"/></td>
+                     </aura:if>
+
                      </tr>
                  </tbody>
  			</table>

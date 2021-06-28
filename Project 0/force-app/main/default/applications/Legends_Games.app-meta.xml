@@ -93,6 +93,8 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Pricebook2</tabs>
     <tabs>standard-Product2</tabs>
+    <tabs>standard-Campaign</tabs>
+    <tabs>standard-Contact</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Legend_s_Games_UtilityBar</utilityBar>
 </CustomApplication>

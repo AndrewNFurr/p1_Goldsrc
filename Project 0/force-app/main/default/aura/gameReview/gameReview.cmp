@@ -1,5 +1,6 @@
-<aura:component >
+<aura:component controller="ReviewSearchController">
     <aura:attribute name="review" type="Game_Reviews__c"/>
+    <aura:attribute name="gameReviewed" type="Game__c"/>
     <lightning:card>
         <div class="slds-page-header">
           <div class="slds-page-header__row">
@@ -7,14 +8,19 @@
               <div class="slds-media">
                 <div class="slds-media__figure">
                   <span class="slds-icon_container slds-icon-standard-opportunity" title="Game Review">
-                    
                     <span class="slds-assistive-text">game</span>
                   </span>
                 </div>
                 <div class="slds-media__body">
                   <div class="slds-page-header__name">
-                    <div class="slds-page-header__name-title">
-                      <h1>
+                    <div class="slds-page-header__name-title
+                                slds-grid
+                                slds-grid_horizonatl">
+                      <lightning:layoutItem>
+                        <lightning:icon iconName="utility:knowledge_base" alternativeText="Review" class="slds-col
+                                                                                                          slds-m-around_small"/>
+                      </lightning:layoutItem>
+                      <h1 class="slds-col slds-m-top_medium">
                         <span class="slds-page-header__title slds-truncate" title="{!v.review.Name}">{!v.review.Name}</span>
                       </h1>
                     </div>
@@ -26,7 +32,17 @@
           </div>
         </div>
         <div class="slds-card__body">
-      
+            <h3>Name of Game</h3>
+      		<p>{!v.review.Game__c}</p>
+            <br/>
+            <h3>User Rating</h3>
+            <p>{!v.review.User_Star_Rating__c}</p>
+            <br/>
+            <h3>Reviewer</h3>
+            <p>{!v.review.Reviewer__c}</p>
+            <br/>
+            <h3>Review</h3>
+            <p>{!v.review.Review__c}</p>
         </div>
     </lightning:card>
 </aura:component>
