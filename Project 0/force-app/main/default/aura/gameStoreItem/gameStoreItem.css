@@ -1,0 +1,11 @@
+.THIS#mybox{
+    
+    border-radius: 25px;
+    padding: 20px;
+    width: 30%;
+    height: 5%;
+    border: 2px solid rgb(31, 0, 77);
+    margin-top: 1%;
+	margin: auto; 
+    background-image:url("https://images.wallpaperscraft.com/image/purple_blue_white_spot_65576_1920x1080.jpg");
+}

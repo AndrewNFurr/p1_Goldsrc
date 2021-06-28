@@ -1,12 +1,18 @@
 <aura:component >
     <aura:attribute name="game" type = "Game__c" />
     <div>
-  		<div>
-            <p>Name: {!v.game.Name}</p>
+  		<div >
+            <p id="myname" style="font-size: 120%;font-weight: 700;">Name: {!v.game.Name}</p>
   		</div>
   		<div >
             <p>Genre: {!v.game.Genre__c}</p>
   		</div>
+        <div>
+        	 <p>Description: {!v.game.Game_Description__c}</p>
+        </div>
+       	<div>
+        	<p>Developer: {!v.game.Developer__c}</p>
+        </div>
 	</div>
     
 </aura:component>

@@ -1,12 +1,26 @@
 <aura:component controller="gameLibraryController">
     <aura:attribute name="myGames" type="Game__c[]" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
-    <p>Game Library: </p>
-    <br />
-    <aura:iteration items="{!v.myGames}" var="game">
-    	<div>
-  			<c:gameItem game="{!game}" />
-            <br />
-		</div>
-    </aura:iteration>
+    
+    <div class="mysetup">
+    <div style="color: rgb(77, 0, 153); font-size: 25px; font-weight: 900; text-align: center;">
+    	<p >Game Library: </p>
+    </div>
+		
+        <aura:iteration items="{!v.myGames}" var="game">
+            <div class ="mysetup" style=" border-radius: 25px;
+                 padding: 20px;
+                 width: 30%;
+                 margin: auto; 
+                 height: 5%;
+                 border: 2px solid rgb(31, 0, 77);
+                 margin-top: 1%; 
+                 background-image:url(https://images.wallpaperscraft.com/image/purple_blue_white_spot_65576_1920x1080.jpg)">
+                <c:gameItem game="{!game}" />
+                <br />
+            </div>
+        </aura:iteration>
+    </div>
+    
+
 </aura:component>

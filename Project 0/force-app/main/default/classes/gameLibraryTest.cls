@@ -77,9 +77,10 @@ public class gameLibraryTest {
                                    Genre__c='Survival', Publisher__c='Publisher ', Release_Date__c =System.today(), ESRB_Rating__c='T (Teen)', Game_Approval__c='Accepted', Price__c=100);
         insert game;
         Game__c myGame = [SELECT Name, Genre__c FROM Game__c WHERE Name='Test Game 00'];
-        System.debug(myGame);
-        Boolean check = gameLibraryController.buyPopularGame(myGame);
         
+        Boolean check = gameLibraryController.buyPopularGame(myGame);
+        Game_Orders__c myOrder = [SELECT Name FROM Game_Orders__c WHERE Game__c=:myGame.Id LIMIT 1];
+        System.assertNotEquals(null, myOrder);
         System.assertNotEquals(true, check);
         Boolean fcheck = gameLibraryController.buyPopularGame(myGame);
         System.assertEquals(true, fcheck);

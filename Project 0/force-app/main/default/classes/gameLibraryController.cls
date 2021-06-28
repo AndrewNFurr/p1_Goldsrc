@@ -57,7 +57,13 @@ public with sharing class gameLibraryController {
     public static Boolean buyPopularGame(Game__c game){
         Game_Account__c myUser = [SELECT Id, Name, CreatedById, OwnerId  FROM Game_Account__c WHERE  OwnerId= :UserInfo.getUserID() LIMIT 1];
         List<My_Games__c> temp = [SELECT Name FROM My_Games__c WHERE Name=:game.Name AND Game_Account__c=:myUser.Id LIMIT 1];
-        System.debug(temp);
+        Game_Payment__c myPayment = [SELECT Id FROM Game_Payment__c WHERE Card_Holder__c =: myUser.Id LIMIT 1];
+       
+        //Create new Order
+        Game__c findIdGame = [SELECT Id FROM Game__c WHERE Name=:game.Name];
+        Game_Orders__c myOrder = new Game_Orders__c(Game_Account__c=myUser.Id, Game_Payment__c=myPayment.Id, Game__c = findIdGame.Id);
+		insert myOrder;        
+        
         if(temp.isEmpty()){
             My_Games__c myGame = new My_Games__c(Name = game.Name, Game__c=game.Id, Game_Genre__c = game.Genre__c,
                                                Game_Title__c=game.Name, Game_Account__c = myUser.Id);

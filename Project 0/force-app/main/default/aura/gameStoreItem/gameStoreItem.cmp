@@ -4,34 +4,39 @@
     <aura:attribute name="disableButton" type="Boolean" default="false"/>
     <aura:attribute name="isOwned" type="Boolean"/>
     <aura:attribute name="isBought" type="Boolean"/>
-    <div>
+    <div id="mybox">
     	<c:gameItem game="{!v.myStoreGame}" />
-        <input type="button" value="View Details" onclick = "{!c.detail}" />
+        <input class="slds-button slds-button_brand"  style="padding: 0.5% 1%; font-size: 100%;
+                                                             background-color:rgb(61, 0, 102);" type="button" value="View Details" onclick = "{!c.detail}" />
     </div>
     
     <div>            
         <aura:if isTrue="{!v.isShow}">
-            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
-                <div class="slds-modal__container">
-                    <header><!--{!v.Game__c.Name}-->
-                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{!v.myStoreGame.Name}</h2>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open" >
+                <div class="slds-modal__container slds-m-top_none" >
+                    <header class="slds-modal__header" style="background-color:rgb(153, 153, 255);"><!--{!v.Game__c.Name}-->
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate" style="color: rgb(31, 0, 77); font-size: 200%; font-weight: bold;">{!v.myStoreGame.Name}</h2>
                     </header>
                     <!--###### MODAL BOX BODY Part Start######-->
-                    <p>Genre: {!v.myStoreGame.Genre__c}</p>
-                    <p>Description: {!v.myStoreGame.Game_Description__c}</p>
-                    <p>Developer: {!v.myStoreGame.Developer__c}</p>
-                    <p>Price: {!v.myStoreGame.Price__c}</p>
-                    <p>Rating: {!v.myStoreGame.Game_User_Rating__c}</p>
                     
-                    <footer>
-                        <input type="button" value="Close" onclick = "{!c.closeDetail}" />
-                        <input type="button"  value="Buy" onclick = "{!c.buyGame}" disabled="{!v.disableButton}"/>
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" style="color: rgb(31, 0, 77); font-size: 180%; font-weight: 500;">
+                    	<p>Genre: {!v.myStoreGame.Genre__c}</p>
+                        <p>Description: {!v.myStoreGame.Game_Description__c}</p>
+                        <p>Developer: {!v.myStoreGame.Developer__c}</p>
+                        <p>Price: {!v.myStoreGame.Price__c}</p>
+                        <p>Rating: {!v.myStoreGame.Game_User_Rating__c}</p>
+                    </div>
+                   
+                    
+                    <footer class="slds-modal__footer slds-modal__footer_directional" style="background-color:rgb(153, 153, 255);">
+                        <input class="slds-button slds-button_neutral" type="button" value="Close" onclick = "{!c.closeDetail}" style="padding: 1% 5%; font-size: 150%;"/>
+                        <input class="slds-button slds-button_brand" type="button"  value="Buy" onclick = "{!c.buyGame}" disabled="{!v.disableButton}" style="padding: 1% 5%; font-size: 150%;"/>
                     </footer>
                     <aura:if isTrue="{!v.isOwned}">
-                    	<p>You Already Owned This Game</p>
+                    	<p class="slds-modal__footer slds-modal__footer_directional" style="background-color:rgb(153, 153, 255);font-size: 150%;">You Already Owned This Game</p>
                     </aura:if>
                     <aura:if isTrue="{!v.isBought}" >
-                    	<p>Thank You For Purchasing</p>
+                    	<p class="slds-modal__footer slds-modal__footer_directional" style="background-color:rgb(153, 153, 255);font-size: 150%;">Thank You For Purchasing</p>
                     </aura:if>
                 </div>
             </section>
