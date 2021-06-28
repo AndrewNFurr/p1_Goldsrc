@@ -1,14 +1,31 @@
-<aura:component >
+<aura:component implements="flexiPage:availableForAllPageTypes" controller="DevGameListController">
+    <aura:handler event="c:choseGame" action="{!c.handleChoice}"/>
     <aura:attribute name="game" type="Game__c"/>
     <aura:attribute name="newReview" type="Game_Reviews__c"/>
+    <aura:attribute name="display" type="Boolean" default="false"/>
     
-	<lightning:recordEditForm objectApiName="Game_Reviews__c" aura:id="createReview">
-    	<lightning:inputField fieldName="Name" />
-        <lightning:outputField value="{!v.game.Name}" />
-        <lightning:inputField fieldName="Reviewer__c" />
-        <lightning:inputField fieldName="Review__c" />
-        <lightning:inputField fieldName="User_Star_Rating__c" />
-        
-        <lightning:button class="slds-m-top_small" type="submit" label="Submit Review" />
-    </lightning:recordEditForm>
+    <aura:if isTrue="{!v.display}">
+        <div class="slds-modal__container">
+            <h1 class="slds-modal__title">Review</h1>
+            <c:game game="{!v.game}" />
+            <lightning:recordEditForm objectApiName="Game_Reviews__c" 
+                                      aura:id="createReview"
+                                      class="slds-grid
+                                             slds-modal__content">
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning:inputField fieldName="Game_Name__c" value="{!v.game.Id}" readonly="true" />
+                    <lightning:inputField fieldName="Name" />
+                    <lightning:inputField fieldName="Reviewer__c" />
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning:inputField fieldName="Review__c" />
+                    <lightning:inputField fieldName="User_Star_Rating__c" />
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning:button class="slds-m-top_small" type="submit" label="Submit Review" />
+                    <lightning:button class="slds-m-top_small" type="reset" label="Cancel" />
+                </footer>
+            </lightning:recordEditForm>
+        </div>
+    </aura:if>
 </aura:component>

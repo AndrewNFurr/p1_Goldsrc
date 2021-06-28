@@ -1,4 +1,5 @@
 <aura:component >
     <c:devGameList/>
     <c:searchResults/>
+    <c:reviewForm/>
 </aura:component>

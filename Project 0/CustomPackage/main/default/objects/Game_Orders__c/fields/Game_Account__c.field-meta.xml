@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Game_Account__c</fullName>
+    <externalId>false</externalId>
+    <label>Game Account</label>
+    <referenceTo>Game_Account__c</referenceTo>
+    <relationshipLabel>Game Orders</relationshipLabel>
+    <relationshipName>GameOrders</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
