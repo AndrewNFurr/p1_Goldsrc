@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>51.0</apiVersion>
     <interviewLabel>Add Game to Library {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Add Game to Library</label>
     <processMetadataValues>
@@ -93,13 +92,12 @@
     <recordLookups>
         <name>Get_Game_Details</name>
         <label>Get Game Details</label>
-        <locationX>477</locationX>
-        <locationY>75</locationY>
+        <locationX>476</locationX>
+        <locationY>76</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Add_Game</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
         <filters>
             <field>GameID__c</field>
             <operator>EqualTo</operator>

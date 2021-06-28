@@ -15,6 +15,10 @@
                 <behavior>Required</behavior>
                 <field>Account_Password__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Age__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -137,6 +141,8 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Friend_Request__c</fields>
+        <fields>Friends__c</fields>
         <relatedList>Game_Friend__c.Game_Account__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
@@ -145,7 +151,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h5e000004YsJH</masterLabel>
+        <masterLabel>00h5e000005Q0oG</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

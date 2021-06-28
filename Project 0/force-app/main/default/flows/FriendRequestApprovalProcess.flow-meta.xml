@@ -25,7 +25,6 @@
         <locationY>200</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>objectId</name>
             <value>
@@ -48,7 +47,6 @@
             </value>
         </inputParameters>
     </actionCalls>
-    <apiVersion>51.0</apiVersion>
     <decisions>
         <processMetadataValues>
             <name>index</name>

@@ -70,7 +70,6 @@
         </action>
     </initialSubmissionActions>
     <label>Game Approval Process</label>
-    <processOrder>1</processOrder>
     <recordEditability>AdminOrCurrentApprover</recordEditability>
     <showApprovalHistory>false</showApprovalHistory>
 </ApprovalProcess>

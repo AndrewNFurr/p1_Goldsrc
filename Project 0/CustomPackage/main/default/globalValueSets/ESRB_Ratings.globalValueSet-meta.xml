@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>RP (Rating Pending)</fullName>
+        <default>true</default>
+        <label>RP (Rating Pending)</label>
+    </customValue>
+    <customValue>
+        <fullName>E (Everyone)</fullName>
+        <default>false</default>
+        <label>E (Everyone)</label>
+    </customValue>
+    <customValue>
+        <fullName>E10+ (Everyone 10+)</fullName>
+        <default>false</default>
+        <label>E10+ (Everyone 10+)</label>
+    </customValue>
+    <customValue>
+        <fullName>T (Teen)</fullName>
+        <default>false</default>
+        <label>T (Teen)</label>
+    </customValue>
+    <customValue>
+        <fullName>M (Mature)</fullName>
+        <default>false</default>
+        <label>M (Mature)</label>
+    </customValue>
+    <customValue>
+        <fullName>AO (Adult Only)</fullName>
+        <default>false</default>
+        <label>AO (Adult Only)</label>
+    </customValue>
+    <masterLabel>ESRB Ratings</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
