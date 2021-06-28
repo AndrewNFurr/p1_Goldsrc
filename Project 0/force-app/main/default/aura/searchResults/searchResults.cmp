@@ -8,7 +8,9 @@
     <div class="slds-card__body">
     	
         <aura:if isTrue="{!v.hasResults}">
-            <h3>Game Reviews</h3>
+            <div class="slds-box slds-theme_shade">
+                <strong><h2 class="h2">Game Reviews</h2></strong>
+            </div>
             <aura:iteration items="{!v.reviews}" var="rev">
                 <c:gameReview review="{!rev}" />
             </aura:iteration>

@@ -10,8 +10,6 @@
                 console.log(reviews);
                 component.set("v.reviews", reviews);
                 component.set("v.hasResults", true);
-                let revs = component.get("v.reviews");
-                console.log(revs);
             } else {
                 console.log("error with results");
             }

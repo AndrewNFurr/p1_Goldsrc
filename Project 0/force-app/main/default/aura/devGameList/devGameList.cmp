@@ -8,7 +8,7 @@
                 <h1>Developer Games</h1>
             </header>
             <section class="slds-col">
-                <div id="list" class=" slds-grid slds-grid_vertical">
+                <div id="list" class="slds-grid slds-grid_vertical">
                     <aura:iteration items="{!v.games}" var="game">
                         <c:game game="{!game}"/>
                     </aura:iteration>
