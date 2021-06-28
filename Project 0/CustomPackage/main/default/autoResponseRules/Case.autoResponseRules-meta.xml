@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Game Issue</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Reason</field>
+                <operation>equals</operation>
+                <value>Performance</value>
+            </criteriaItems>
+            <replyToEmail>oleandy1221@gmail.com</replyToEmail>
+            <senderEmail>oleandy1221@gmail.com</senderEmail>
+            <senderName>John</senderName>
+            <template>unfiled$public/SupportCaseResponse</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Reason</field>
+                <operation>equals</operation>
+                <value>Feedback</value>
+            </criteriaItems>
+            <replyToEmail>oleandy1221@gmail.com</replyToEmail>
+            <senderEmail>oleandy1221@gmail.com</senderEmail>
+            <senderName>John</senderName>
+            <template>unfiled$public/SupportCaseCreatedWebInquiries</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

@@ -1,0 +1,19 @@
+<aura:component controller="DevGameListController">
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+    <aura:attribute name='games' type="Game__c[]" />
+    <c:reviewForm/>
+    <lightning:card>
+        <div class="slds-align_absolute-center slds-grid slds-grid_vertical">
+            <header class="slds-card__header slds-col">
+                <h1>Developer Games</h1>
+            </header>
+            <section class="slds-col">
+                <div id="list" class="slds-grid slds-grid_vertical">
+                    <aura:iteration items="{!v.games}" var="game">
+                        <c:game game="{!game}"/>
+                    </aura:iteration>
+                </div>
+            </section>
+        </div>
+    </lightning:card>
+</aura:component>

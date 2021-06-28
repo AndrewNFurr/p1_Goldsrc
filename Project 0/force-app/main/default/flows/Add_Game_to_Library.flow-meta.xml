@@ -92,8 +92,8 @@
     <recordLookups>
         <name>Get_Game_Details</name>
         <label>Get Game Details</label>
-        <locationX>477</locationX>
-        <locationY>75</locationY>
+        <locationX>476</locationX>
+        <locationY>76</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Add_Game</targetReference>
