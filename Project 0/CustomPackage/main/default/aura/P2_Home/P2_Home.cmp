@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+	<div class="slds-grid slds-gutters slds-wrap">
+        <c:P2_Header />
+        <c:P2_Account_Info />
+    </div>
+</aura:component>

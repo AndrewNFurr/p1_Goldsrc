@@ -1,0 +1,19 @@
+<aura:component >
+	<div class="slds-grid slds-wrap">
+  		<div class="slds-col slds-size_1-of-5">
+    		<h2>Account</h2>
+        </div>
+        <div class="slds-col slds-size_1-of-5">
+            <h2>Name</h2>
+        </div>
+        <div class="slds-col slds-size_1-of-5">
+            <h2>About Me</h2>
+        </div>
+        <div class="slds-col slds-size_1-of-5">
+            <h2>Address</h2> 
+        </div>
+        <div class="slds-col slds-size_1-of-5">
+            <h2>DOB</h2>
+  		</div>
+    </div>
+</aura:component>
