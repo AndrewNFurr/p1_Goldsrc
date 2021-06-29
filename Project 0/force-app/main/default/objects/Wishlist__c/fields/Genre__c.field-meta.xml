@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Genre__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES ( Game__r.Genre__c , &quot;RTS (Real-time strategy)&quot; ), &quot;RTS (Real-time strategy); &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;RPG (Role Playing Game)&quot; ), &quot;RPG (Role Playing Game); &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Simulation&quot; ), &quot;Simulation; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Platformer&quot; ), &quot;Platformer; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Survival&quot; ), &quot;Survival; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Horror&quot; ), &quot;Horror; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Crafting&quot; ), &quot;Crafting; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Sport&quot; ), &quot;Sport; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Action&quot; ), &quot;Action; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Adventure&quot; ), &quot;Adventure; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Fighting&quot; ), &quot;Fighting; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;FPS (First Person Shooter)&quot; ), &quot;FPS (First Person Shooter); &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;MMO (Massive Multiplayer Online)&quot; ), &quot;MMO (Massive Multiplayer Online); &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;MMORPG (Massive Multiplayer Online Role-Playing Game)&quot; ), &quot;MMORPG (Massive Multiplayer Online Role-Playing Game); &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;MOBA (Multiplayer Online Battle Arena)&quot; ), &quot;MOBA (Multiplayer Online Battle Arena); &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Multiplayer&quot; ), &quot;Multiplayer; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Party&quot; ), &quot;Party; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Puzzle&quot; ), &quot;Puzzle; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Racing&quot; ), &quot;Racing; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Rhythm&quot; ), &quot;Rhythm; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Stealth&quot; ), &quot;Stealth; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;TPS (Third Person Shooter)&quot; ), &quot;TPS (Third Person Shooter); &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Trivia&quot; ), &quot;Trivia; &quot;,null ) &amp;
+IF ( INCLUDES ( Game__r.Genre__c , &quot;Strategy&quot; ), &quot;Strategy; &quot;,null )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Genre</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

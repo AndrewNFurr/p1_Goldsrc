@@ -1,0 +1,29 @@
+.THIS .login {
+    font-size: large;
+    font-weight: bold;
+    color: purple;
+}
+
+.THIS .wishlistFields {
+    background-color: lavender;
+}
+
+.THIS .wishlist {
+    font-size: large;
+    font-weight: bold;
+    width: 50%;
+    padding: 10px;
+    color: purple;
+}
+
+.THIS .whole {
+    background-image:url("https://www.xmple.com/wallpaper/gradient-white-purple-linear-1920x1080-c2-9370db-ffffff-a-255-f-14.svg")
+}
+
+.THIS .incorrect {
+    font-size: Medium;
+    font-weight: bold;
+    width: 50%;
+    padding: 10px;
+    color: purple;
+}

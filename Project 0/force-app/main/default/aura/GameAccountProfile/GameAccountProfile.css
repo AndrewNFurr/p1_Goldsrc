@@ -1,0 +1,17 @@
+.THIS .login {
+    font-size: large;
+    font-weight: bold;
+}
+
+.THIS .incorrect {
+    font-weight: bold;
+    color: red;
+}
+
+.THIS .profile {
+    font-size: large;
+    font-weight: bold;
+    width: 50%;
+    padding: 10px;
+    
+}

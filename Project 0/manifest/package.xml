@@ -4,9 +4,45 @@
         <members>*</members>
         <name>ApexClass</name>
     </types>
-        <types>
+    <types>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTestSuite</name>
+    </types>
+    <types>
         <members>*</members>
         <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>Game_Account__c</members>
+        <members>Wishlist__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>A Developer</members>
+        <members>A Gamer</members>
+        <members>System Administrator</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Game_Account__c-GameAccount Layout</members>
+        <members>Wishlist__c-Wishlist Layout</members>
+        <name>Layout</name>
     </types>
     <version>51.0</version>
 </Package>

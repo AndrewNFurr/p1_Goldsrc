@@ -1,0 +1,58 @@
+<aura:component controller="WishlistController">
+    
+    <!--Establishing attributes -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="wish" type="Game__c[]"/>
+    <aura:attribute name="wish2" type="Wishlist__c"/>
+    <aura:attribute name="name" type="String" default=""/>
+    <aura:attribute name="display" type="boolean" default="false"/>
+    <aura:attribute name="nomatch" type="boolean" default="false"/>
+    
+    
+    <!--Prompting user to type in their name-->
+    <div class="whole" style="background-image:url(https://www.xmple.com/wallpaper/gradient-white-purple-linear-1920x1080-c2-9370db-ffffff-a-255-f-14.svg);">
+    <lightning:layoutItem padding="horizontal-small">
+        <div class="login">
+            <h1>Enter your name</h1>
+        </div> 
+        <div>
+            <fieldset>
+                <form>
+                    <lightning:input type="text" name="username" value="{!v.name}" label="Username" />
+                    <br/>
+                    <lightning:button label="Search" variant="brand" onclick="{!c.compareName}"/>
+                </form>
+                
+            </fieldset>    
+        </div>
+    </lightning:layoutItem>  
+    <br/>
+    
+    <!--Conditionally renders if name matches-->
+    <aura:if isTrue="{!v.display}">
+        <lightning:layoutItem padding="horizontal-small">
+        	<div>
+                <h1 class="wishlist">Your Wishlist</h1>
+            </div>
+    	
+            <div class="wishlistFields">
+                <!-- looping through each wishlist entry -->
+                <aura:iteration items="{!v.wish}" var="PerWish">
+                    <c:WishlistFields wishField="{!PerWish}"/>
+                    <br/>
+                </aura:iteration>
+               
+            </div>
+        </lightning:layoutItem> 
+    </aura:if>
+    
+    <!--Renders if name does not match-->
+    <aura:if isTrue="{!v.nomatch}" >
+    	<lightning:layoutItem padding="horizontal-small">
+            <div class="incorrect">
+                Looks like your wishlist is empty. Feel free to add more to fill it up!
+            </div>
+        </lightning:layoutItem>
+    </aura:if> 
+    </div>    
+</aura:component>

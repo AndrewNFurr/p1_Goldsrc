@@ -17,6 +17,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Password__c</field>
                 <field>Age__c</field>
             </layoutItems>
         </layoutColumns>
