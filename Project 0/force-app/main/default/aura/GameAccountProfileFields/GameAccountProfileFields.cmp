@@ -1,0 +1,85 @@
+<aura:component >
+    <aura:attribute name="gaccField" type="Game_Account__c"/>
+    <lightning:layoutItem padding="horizontal-small">
+        <lightning:recordEditForm recordId="{!v.gaccField.Id}" objectApiName="Game_Account__c" class="slds-grid slds-gutters"> 
+            <div class="slds-grid">
+                <div id="field" class="slds-col">
+                <span>
+                <h1 class="header">Bio</h1>
+                <p>
+                     <lightning:inputField fieldName="Name" value="{!v.gaccField.Name}"/>
+                    <br/>
+                </p>
+                <p>
+                    <lightning:inputField fieldName="Account_Type__c" value="{!v.gaccField.Account_Type__c}" readonly="true"/>
+                    <br/>
+                </p> 
+                <p>
+                    <lightning:inputField fieldName="First_Name__c" value="{!v.gaccField.First_Name__c}"/>
+                    <br/>
+                </p>
+                <p>
+                    <lightning:inputField fieldName="Last_Name__c" value="{!v.gaccField.Last_Name__c}"/>
+                    <br/>
+                </p>
+                <p>
+                    <lightning:inputField fieldName="Date_Of_Birth__c" value="{!v.gaccField.Date_Of_Birth__c}"/>
+                    <br/>
+                </p>
+                <p>
+                    <lightning:inputField fieldName="About_ME__c" value="{!v.gaccField.About_ME__c}"/>
+                    <br/>
+                </p>
+                </span>
+                </div>    
+            </div>
+            <div class="slds-grid">
+                <div id="field" class="slds-col">
+                <span>
+                <h1 class="header">Contact Information</h1>
+                <p>
+                    <lightning:inputField fieldName="Email__c" value="{!v.gaccField.Email__c}"/>
+                    <br/>
+                </p>
+                <p>Phone Number:
+                    <lightning:inputField fieldName="Phone_Number__c" value="{!v.gaccField.Phone_Number__c}"/>
+                    <br/>
+                </p>
+                </span>  
+                </div>    
+            </div>
+            <div class="slds-grid">
+                <span>
+                <h1 class="header">Billing and Shipping Information</h1>
+                <p>
+                    <lightning:inputField fieldName="Address_1__c" value="{!v.gaccField.Address_1__c}"/>
+                    <br/>
+                </p>
+                <p>
+                    <lightning:inputField fieldName="Address_2__c" value="{!v.gaccField.Address_2__c}"/>
+                    <br/>
+                </p>
+                <p>
+                    <lightning:inputField fieldName="City__c" value="{!v.gaccField.City__c}"/>
+                    <br/>
+                </p>
+                <p>
+                    <lightning:inputField fieldName="Country__c" value="{!v.gaccField.Country__c}"/>
+                    <br/>
+                </p>
+                <p>
+                    <lightning:inputField fieldName="State__c" value="{!v.gaccField.State__c}"/>
+                    <br/>
+                </p>
+                <p>
+                    <lightning:inputField fieldName="Zip_Code__c" value="{!v.gaccField.Zip_Code__c}"/>
+                    <br/>
+                </p>
+                </span>
+                
+            </div>
+            <lightning:button class="slds-m-top_small" name="update" type="submit" label="Submit Changes" variant="brand-outline" onclick="{!c.handleClick}" />
+        </lightning:recordEditForm>
+    </lightning:layoutItem>    
+	
+</aura:component>

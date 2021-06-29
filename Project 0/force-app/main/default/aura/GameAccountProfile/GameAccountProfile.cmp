@@ -1,0 +1,57 @@
+<aura:component controller="GameAccountAuraController">
+    <!--Establishing attributes -->
+    <aura:attribute name="gacc" type="Game_Account__c[]"/>
+    <aura:attribute name="gacc2" type="Game_Account__c"/>
+    <aura:attribute name="name" type="String" default=""/>
+    <aura:attribute name="password" type="String" default=""/>
+    <aura:attribute name="display" type="boolean" default="false"/>
+    <aura:attribute name="nomatch" type="boolean" default="false"/>
+    
+    <!--Prompting user to log in first-->
+    <lightning:layoutItem padding="horizontal-small">
+        <div class="login">
+            <h1>Please Login</h1>
+        </div>
+        
+        <div>
+            <fieldset>
+                <form>
+                    <lightning:input type="text" name="username" value="{!v.name}" label="Username" />
+                    <lightning:input type="password" name="password" value="{!v.password}" label="Password" />
+                    <br/>
+                    <lightning:button label="Login" variant="brand" onclick="{!c.compareNamePass}"/>
+                </form>
+                
+            </fieldset>    
+        </div>
+    </lightning:layoutItem>  
+    <br/>
+    
+    <!--Conditionally renders if name and password match-->
+    <aura:if isTrue="{!v.display}">
+        	<div>
+                <h1 class="profile">Profile</h1>
+            </div>
+    	<lightning:layoutItem padding="horizontal-small">
+            <div class="profileFields">
+                
+                <c:GameAccountProfileFields gaccField="{!v.gacc[0]}"/>
+
+                    <br/>
+               
+            </div>
+        </lightning:layoutItem> 
+    </aura:if>
+        
+    <!--Renders if name and password do not match-->
+    <aura:if isTrue="{!v.nomatch}" >
+    	<br/>
+    	<lightning:layoutItem padding="horizontal-small">
+            <div class="incorrect">
+                Sorry, your Username and Password do not match our records.
+            </div>
+        </lightning:layoutItem>
+  	
+    </aura:if> 
+  
+</aura:component>

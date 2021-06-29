@@ -1,0 +1,31 @@
+<aura:component >
+    <!--Establish attribute -->
+	<aura:attribute name="wishField" type="Game__c"/>
+    
+    <!--Displaying read only fields for each Wishlist-->
+        <lightning:layoutItem padding="horizontal-small">
+            <lightning:recordEditForm recordId="{!v.wishField.Id}" objectApiName="Game__c" class="slds-grid slds-gutters">
+                <div class="slds-grid">
+					<div id="field" class="slds-col">                 
+                    	<lightning:outputField fieldName="Name"/>
+                    </div>
+                    
+                    <div id="field" class="slds-col"> 
+                    	<lightning:outputField fieldName="Publisher__c"/>
+                    </div>
+                    
+                    <div id="field" class="slds-col"> 
+                        <lightning:outputField fieldName="Genre__c"/>
+                    </div> 
+                    
+                    <div id="field" class="slds-col"> 
+                    	<lightning:outputField fieldName="Price__c"/>
+                    </div>  
+                    
+                    <div id="field" class="slds-col"> 
+                    	<lightning:outputField fieldName="Release_Date__c"/>
+                    </div>    
+                </div>
+            </lightning:recordEditForm>
+        </lightning:layoutItem>
+</aura:component>

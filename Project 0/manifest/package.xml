@@ -18,10 +18,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
@@ -29,126 +25,25 @@
         <name>LightningComponentBundle</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Game_Account__c</members>
+        <members>Wishlist__c</members>
         <name>CustomObject</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApprovalProcess</name>
-    </types>
-    <types>
-        <members>Legends_Games</members>
-        <name>CustomApplication</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>FlexiPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomApplicationComponent</name>
     </types>
     <types>
         <members>*</members>
         <name>CustomTab</name>
     </types>
     <types>
-        <members>*</members>
-        <name>AssignmentRules</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>EscalationRules</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>AutoResponseRules</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Flow</name>
-    </types>
-    <types>
-        <members>Countries</members>
-        <members>ESRB_Ratings</members>
-        <members>Game_Genre</members>
-        <members>Payment_Cards</members>
-        <members>States</members>
-        <name>GlobalPicklist</name>
-    </types>
-    <types>
-        <members>Countries</members>
-        <members>ESRB_Ratings</members>
-        <members>Game_Genre</members>
-        <members>Payment_Cards</members>
-        <members>States</members>
-        <name>GlobalValueSet</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Group</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>HomePageComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>HomePageLayout</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>LightningBolt</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>NavigationMenu</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>PermissionSet</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>PermissionSetGroup</name>
-    </types>
-    <types>
-        <members>Admin</members>
         <members>A Developer</members>
         <members>A Gamer</members>
-        <members>A Employee</members>
-        <members>A Manager</members>
+        <members>System Administrator</members>
         <name>Profile</name>
     </types>
     <types>
-        <members>Game_Order_Approvers</members>
-        <name>Queue</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Role</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Workflow</name>
-    </types>
-    <types>
-        <members>Game__c-Game Layout</members>
         <members>Game_Account__c-GameAccount Layout</members>
-        <members>Game_Payment__c-Payment Layout</members>
-        <members>Game_Cart__c-Cart Layout</members>
-        <members>Game_Friend__c-Friend Layout</members>
-        <members>My_Games__c-Game Library Layout</members>    
-        <members>Game_Orders__c-Order Layout</members>
-        <members>Game_Reviews__c-Rating Layout</members>
-        <members>Game_Refunds__c-Game Rufund Layout</members>
+        <members>Wishlist__c-Wishlist Layout</members>
         <name>Layout</name>
     </types>
-        <types>
-        <members>Game__c.Order_Game</members>
-        <members>My_Games__c.Review_Game</members>
-        <name>QuickAction</name>
-    </types>
-
+    
     <version>51.0</version>
 </Package>
