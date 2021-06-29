@@ -1,0 +1,16 @@
+.THIS .buyButton{
+    float: left;
+}
+.THIS .esrbRating{
+    float: right;
+}
+
+.THIS .gameTitle{
+    font-size: 1.5em;
+}
+
+.THIS .browse{
+    background-image: url( https://www.xmple.com/wallpaper/gradient-white-purple-linear-1920x1080-c2-9370db-ffffff-a-255-f-14.svg);
+    background-repeat: none;
+    margin-bottom: 1em;
+}

@@ -1,5 +1,4 @@
 <apex:page controller="GamerAccountInfoController" lightningStylesheets="true">
-    <apex:slds />
     <apex:pageBlock >
     <!--Display Table of Games-->
         <apex:repeat value="{!account}" var="accts">

@@ -1,0 +1,4 @@
+<aura:component>
+    <!--possibly add a counter and stuff for the returned results if you have time -->
+    <c:resultsForm/>
+</aura:component>

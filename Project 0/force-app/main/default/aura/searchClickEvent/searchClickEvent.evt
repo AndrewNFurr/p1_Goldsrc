@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="game search button click event">
+    <aura:attribute name="userInput" type="String" />
+</aura:event>

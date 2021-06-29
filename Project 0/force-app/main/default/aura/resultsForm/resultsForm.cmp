@@ -1,0 +1,36 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickAction" controller="gameIdRetriever">
+    <aura:attribute name="searchResults" type="Game__c"/>
+    <br/>
+    <div>
+    <aura:iteration items="{!v.searchResults}" var="game">
+        <div class="slds-align_absolute-center">
+        <div class="slds-box">
+        <a href="#"><lightning:icon iconName="custom:custom1" alternativeText="Favorite" class="favButton"/></a>
+            <br/><br/>
+        <p class="gameTitle slds-align_absolute-center" >{!game.Name}</p>
+            <br/>
+         <lightning:icon iconName="custom:custom71" alternativeText="game Image" class="centerSearchIcon slds-align_absolute-center"/>
+            <br/>
+            <span style="float:right; font-size: 2em">${!game.Price__c}</span>
+            <br/>
+            <br/>
+            <span><strong>Genre:</strong> {!game.Genre__c}</span>
+            <br/>
+            <span><strong>ESRB Rating:</strong> {!game.ESRB_Rating__c}</span>
+            <br/>
+            <span><strong>{!game.Game_Description__c}</strong></span>
+            <br/>
+            <span><strong>Publisher:</strong>{!game.Publisher__c}</span>
+            <br/>
+            <span><strong>Developer:</strong> {!game.Developer__c}</span>
+            <br/>
+            <span><strong>Released:</strong> {!game.Release_Date__c}</span>
+            <br/>
+   
+            <p class="slds-align_absolute-center"><strong><a href="#">Add To Cart</a></strong></p>
+        <br/>
+        </div>
+        </div>
+        </aura:iteration>
+    </div>
+</aura:component>

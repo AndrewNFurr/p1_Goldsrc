@@ -1,0 +1,15 @@
+<aura:component controller="gameIdRetriever">
+ 
+    <aura:attribute name="userInput" type="String"/>
+    <div class="slds-align_absolute-center">
+    <lightning:input label="Enter Name of Game:" value="{!v.userInput}" type="String"/>
+    <lightning:button label="Search Games" onclick="{!c.searchGames}" class="searchButton"/>
+    </div>
+    <br/>
+    <aura:attribute name="search" type="Game__c[]"/>
+    <c:resultsForm searchResults="{!v.search}"/>
+    <br/>
+    <br/>
+    <aura:attribute name="brows" type="Game__c[]"/>
+   	<c:browseGames browse="{!v.brows}"/>
+</aura:component>

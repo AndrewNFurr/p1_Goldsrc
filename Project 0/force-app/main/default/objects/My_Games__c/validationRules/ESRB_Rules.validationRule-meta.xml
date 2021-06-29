@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ESRB_Rules</fullName>
+    <active>true</active>
+    <description>Prevents users from accessing games they are not allowed to view by age.</description>
+    <errorConditionFormula>IF(ISPICKVAL(Game__r.ESRB_Rating__c,&quot;E10+ (Everyone 10+)&quot;) &amp;&amp;  Game_Account__r.Age__c &lt; 10, true, false)
+
+||
+
+IF(ISPICKVAL(Game__r.ESRB_Rating__c,&quot;T (Teen)&quot;) &amp;&amp;  Game_Account__r.Age__c &lt; 13, true, false)
+
+||
+
+IF(ISPICKVAL(Game__r.ESRB_Rating__c,&quot;M (Mature)&quot;) &amp;&amp;  Game_Account__r.Age__c &lt; 16, true, false)
+
+||
+
+IF(ISPICKVAL(Game__r.ESRB_Rating__c,&quot;AO (Adult Only)&quot;) &amp;&amp;  Game_Account__r.Age__c &lt; 18, true, false)</errorConditionFormula>
+    <errorMessage>You&apos;re not old enough to purchase this game.</errorMessage>
+</ValidationRule>

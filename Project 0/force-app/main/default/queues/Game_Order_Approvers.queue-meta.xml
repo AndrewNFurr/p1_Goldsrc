@@ -2,12 +2,6 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Game Order Approvers</name>
-    <queueMembers>
-        <roles>
-            <role>Game_Store_Employee</role>
-            <role>Game_Store_Manager</role>
-        </roles>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Game_Account__c</sobjectType>
     </queueSobject>

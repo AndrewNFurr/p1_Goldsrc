@@ -149,6 +149,10 @@
         <members>My_Games__c.Review_Game</members>
         <name>QuickAction</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
 
     <version>51.0</version>
 </Package>

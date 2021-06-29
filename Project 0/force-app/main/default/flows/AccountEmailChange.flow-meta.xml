@@ -13,7 +13,6 @@
         <locationY>200</locationY>
         <actionName>Game_Account__c.Email_Change</actionName>
         <actionType>emailAlert</actionType>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>SObjectRowId</name>
             <value>
@@ -21,7 +20,6 @@
             </value>
         </inputParameters>
     </actionCalls>
-    <apiVersion>51.0</apiVersion>
     <decisions>
         <name>isChangedDecision2_myRule_1_Email_c</name>
         <label>isChangedDecision2_myRule_1_Email_c</label>

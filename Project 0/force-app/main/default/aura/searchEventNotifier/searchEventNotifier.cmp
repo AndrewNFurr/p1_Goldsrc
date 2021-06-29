@@ -1,0 +1,7 @@
+<aura:component controller="gameIdRetriever">
+	<!--<aura:registerEvent name="clickEvent" type="c:searchClickEvent"/>
+    <lightning:button label="Search Games" onclick="{!searchGames}"/>
+    <aura:handler name="clickEvent" event="c:searchClickEvent" action="{!c.searchGames}"/>-->
+    
+    
+</aura:component>

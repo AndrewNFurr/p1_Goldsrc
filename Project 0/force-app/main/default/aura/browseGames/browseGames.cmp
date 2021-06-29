@@ -1,0 +1,29 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickAction" controller="gameIdRetriever">
+    <aura:attribute name="browse" type="Game__c[]"/>
+    <span onmouseover="{!c.showAllGame}" class="slds-align_absolute-center" style="font-size:3em">Browse Our Games</span>
+    <br/>
+    <br/>
+    <div class="slds-grid">
+    <aura:iteration items="{!v.browse}" var="game">
+        <div class="slds-col">
+        <lightning:card class="slds-size_8-of-12 slds-p-around_small slds-m-around_xx-small browse">
+           
+                <span>
+                    <a href="#"><lightning:icon iconName="custom:custom93" alternativeText="Buy" class="buyButton"/></a> 
+        <p class="esrbRating">{!game.ESRB_Rating__c}</p>
+                    <br/>
+                    <br/>
+        <p class="price">${!game.Price__c}</p>
+                    <br/>
+        <p class="gameTitle slds-align_absolute-center">{!game.Name}</p>
+                    <br/>
+        <span>{!game.Genre__c}</span>
+                    <br/>
+        <span>{!game.Game_Description__c}</span>
+        <br/>
+                    </span>
+        </lightning:card>
+        </div>
+    </aura:iteration>
+    </div>
+</aura:component>

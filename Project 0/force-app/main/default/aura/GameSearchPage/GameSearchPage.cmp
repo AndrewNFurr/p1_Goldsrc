@@ -1,0 +1,10 @@
+<aura:component >
+    <lightning:card>
+        <div style="background-image:url(https://wallpapercave.com/wp/wp8371694.png)">
+        <h1 class="slds-align_absolute-center" style="font-size:3em">Search Below for Games</h1>
+        <br/>
+        <br/>
+        <c:searchQueryBar/>
+        </div>
+         </lightning:card>
+</aura:component>
