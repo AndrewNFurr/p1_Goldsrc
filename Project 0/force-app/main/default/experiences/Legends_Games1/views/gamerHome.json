@@ -1,0 +1,71 @@
+{
+  "appPageId" : "7255ddac-ed7e-456e-b44d-d310ec9840da",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "91a2f00b-208e-4d27-9320-7fd325312e7d",
+  "label" : "Gamer Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "5c347da3-0942-4796-849a-da18592d0f25",
+          "columns" : [ {
+            "UUID" : "a278aaf3-3f7a-443a-ad9b-4c6dc75393a9",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "5c347da3-0942-4796-849a-da18592d0f25",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "300",
+            "pageName" : "GamerPage",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:visualforcePage",
+          "id" : "2c496331-6400-4aef-ab41-683ec56d7170",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a278aaf3-3f7a-443a-ad9b-4c6dc75393a9",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c28a456a-f275-485d-8ec3-3e9fd81ca4e7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d2944f3e-cf0f-4e09-a7bd-4f0b88d614fc",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d9c042d2-e06e-45a9-94b6-649490f85577",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

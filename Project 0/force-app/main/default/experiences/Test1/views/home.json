@@ -1,0 +1,58 @@
+{
+  "appPageId" : "782c7962-7dc0-4cab-ba85-bbe065ee49fc",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "5c39f776-1eb3-4b6f-b088-08c7e6e1ffd6",
+  "label" : "Home",
+  "regions" : [ {
+    "id" : "0e5e5e98-e177-4bfa-b318-01171828515d",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div>     <p><span style='font-size: 48px;'>Let's get started!</span></p>     <ol>         <li><span style='font-size: 18px;'>Unfamiliar with Build Your Own? Click Take a Tour in the Help menu.</span></li>         <li><span style='font-size: 18px;'>Want to add more pages? Take a look at the Pages menu.</span></li>         <li><span style='font-size: 18px;'>Want more components on your page? Drag and drop components from the Components panel.</span></li>         <li><span style='font-size: 18px;'>Want your users to see your company logo? Head on over to the Theme panel.</span></li>         <li><span style='font-size: 18px;'>Refine the look of your site with a custom theme layout. See the Experience Cloud Developer Guide.</span></li>     </ol> </div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "43fb8128-8809-4baf-b198-1c470c84245e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "height" : "300",
+        "pageName" : "DeveloperPageForGames",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:visualforcePage",
+      "id" : "5c677dbb-cda8-4ef4-99ea-c75f7ac531e9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "936f1c4f-3b2b-4c60-8f4a-ce6e6472cd4b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3c43400f-6060-4ac9-912c-03cc2b17a2e6",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ba8d3253-0e71-4b32-8fa2-19e426107469",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1a5e1c40-2b9b-4455-93f4-00de47d946f3",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

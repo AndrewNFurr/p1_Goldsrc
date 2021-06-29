@@ -1,0 +1,25 @@
+<apex:page controller="GameSearchController" lightningStylesheets="true">
+    <apex:slds />
+    <apex:form >
+        <br/>
+        <div class="slds-align_absolute-center">
+        <apex:inputText value="{!searchQuery}" label="Input"/>
+        <apex:commandButton value="Search Game" action="{!searchGames}"/>
+        </div>
+             
+        <br/>
+        <apex:pageBlock title="Game List" mode="edit">
+               <!-- <apex:commandButton value="Clear reviews" action="{!clear}"/> -->
+            <apex:pageBlockTable value="{!gameList}" var="mainList">
+                <apex:column headerValue="Game Title">
+                    <apex:outputLink value="/{!mainList}">{!mainList.Name}</apex:outputLink>
+                </apex:column>
+                <!--<apex:column headerValue="Game Title" value="{!mainList.Name}"/>-->
+                <apex:column headerValue="Genre" value="{!mainList.Genre__c}"/>
+                <apex:column headerValue="ESRB" value="{!mainList.ESRB_Rating__c}"/>
+                <apex:column headerValue="Price" value="{!mainList.Price__c}"/>
+                <apex:column headerValue="Release Date" value="{!mainList.Release_Date__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

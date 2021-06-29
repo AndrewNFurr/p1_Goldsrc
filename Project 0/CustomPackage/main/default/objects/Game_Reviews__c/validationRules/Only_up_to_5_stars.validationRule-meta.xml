@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_up_to_5_stars</fullName>
+    <active>true</active>
+    <errorConditionFormula>(User_Star_Rating__c &gt; 5) ||  (User_Star_Rating__c &lt; 0)</errorConditionFormula>
+    <errorDisplayField>User_Star_Rating__c</errorDisplayField>
+    <errorMessage>Rating has to be between 0 - 5</errorMessage>
+</ValidationRule>

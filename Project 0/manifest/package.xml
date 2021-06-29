@@ -44,6 +44,5 @@
         <members>Wishlist__c-Wishlist Layout</members>
         <name>Layout</name>
     </types>
-    
     <version>51.0</version>
 </Package>

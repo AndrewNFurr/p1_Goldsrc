@@ -1,0 +1,28 @@
+<apex:page Controller="GameDisplayForDevelopers" lightningStylesheets="true">
+    <apex:slds />
+    <apex:form >
+        
+        <apex:pageBlock title="Developer Games">
+            <apex:pageBlockTable value="{!games}" var="myGames">
+                <apex:column HeaderValue="Title" value="{!myGames.Name}"/>
+                <apex:column headerValue="Genre" value="{!myGames.Genre__c}"/>
+                <apex:column HeaderValue="Developer" value="{!myGames.Developer__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        <div class="slds-align_absolute-center">
+            <apex:inputText value="{!userInput}" label="Input"/>
+            <apex:commandButton value="Search reviews" action="{!searchReviews}"/>
+            <apex:commandButton value="Clear reviews" action="{!clear}"/>
+        </div>
+        <br/>
+        <apex:pageBlock title="Game Reviews" id="display">
+            <apex:pageBlockTable value="{!gameReviews}" var="reviews">
+                <apex:column HeaderValue="Review Title" value="{!reviews.Name}"/>
+                <apex:column HeaderValue="Review" value="{!reviews.Review__c}"/>
+                <apex:column HeaderValue="Stars Given" value="{!reviews.User_Star_Rating__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

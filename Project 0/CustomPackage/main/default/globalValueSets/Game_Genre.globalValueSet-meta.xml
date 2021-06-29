@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Sandbox</fullName>
+        <default>false</default>
+        <label>Sandbox</label>
+    </customValue>
+    <customValue>
+        <fullName>RTS (Real-time strategy)</fullName>
+        <default>false</default>
+        <label>RTS (Real-time strategy)</label>
+    </customValue>
+    <customValue>
+        <fullName>RPG (Role Playing Game)</fullName>
+        <default>false</default>
+        <label>RPG (Role Playing Game)</label>
+    </customValue>
+    <customValue>
+        <fullName>Simulation</fullName>
+        <default>false</default>
+        <label>Simulation</label>
+    </customValue>
+    <customValue>
+        <fullName>Platformer</fullName>
+        <default>false</default>
+        <label>Platformer</label>
+    </customValue>
+    <customValue>
+        <fullName>Survival</fullName>
+        <default>false</default>
+        <label>Survival</label>
+    </customValue>
+    <customValue>
+        <fullName>Horror</fullName>
+        <default>false</default>
+        <label>Horror</label>
+    </customValue>
+    <customValue>
+        <fullName>Crafting</fullName>
+        <default>false</default>
+        <label>Crafting</label>
+    </customValue>
+    <customValue>
+        <fullName>Sport</fullName>
+        <default>false</default>
+        <label>Sport</label>
+    </customValue>
+    <customValue>
+        <fullName>Action</fullName>
+        <default>false</default>
+        <label>Action</label>
+    </customValue>
+    <customValue>
+        <fullName>Adventure</fullName>
+        <default>false</default>
+        <label>Adventure</label>
+    </customValue>
+    <customValue>
+        <fullName>Fighting</fullName>
+        <default>false</default>
+        <label>Fighting</label>
+    </customValue>
+    <customValue>
+        <fullName>FPS (First Person Shooter)</fullName>
+        <default>false</default>
+        <label>FPS (First Person Shooter)</label>
+    </customValue>
+    <customValue>
+        <fullName>MMO (Massive Multiplayer Online)</fullName>
+        <default>false</default>
+        <label>MMO (Massive Multiplayer Online)</label>
+    </customValue>
+    <customValue>
+        <fullName>MMORPG (Massive Multiplayer Online Role-Playing Game)</fullName>
+        <default>false</default>
+        <label>MMORPG (Massive Multiplayer Online Role-Playing Game)</label>
+    </customValue>
+    <customValue>
+        <fullName>MOBA (Multiplayer Online Battle Arena)</fullName>
+        <default>false</default>
+        <label>MOBA (Multiplayer Online Battle Arena)</label>
+    </customValue>
+    <customValue>
+        <fullName>Multiplayer</fullName>
+        <default>false</default>
+        <label>Multiplayer</label>
+    </customValue>
+    <customValue>
+        <fullName>Party</fullName>
+        <default>false</default>
+        <label>Party</label>
+    </customValue>
+    <customValue>
+        <fullName>Puzzle</fullName>
+        <default>false</default>
+        <label>Puzzle</label>
+    </customValue>
+    <customValue>
+        <fullName>Racing</fullName>
+        <default>false</default>
+        <label>Racing</label>
+    </customValue>
+    <customValue>
+        <fullName>Rhythm</fullName>
+        <default>false</default>
+        <label>Rhythm</label>
+    </customValue>
+    <customValue>
+        <fullName>Stealth</fullName>
+        <default>false</default>
+        <label>Stealth</label>
+    </customValue>
+    <customValue>
+        <fullName>TPS (Third Person Shooter)</fullName>
+        <default>false</default>
+        <label>TPS (Third Person Shooter)</label>
+    </customValue>
+    <customValue>
+        <fullName>Trivia</fullName>
+        <default>false</default>
+        <label>Trivia</label>
+    </customValue>
+    <customValue>
+        <fullName>Strategy</fullName>
+        <default>false</default>
+        <label>Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Puzzlers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Puzzlers</label>
+    </customValue>
+    <masterLabel>Game Genre</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

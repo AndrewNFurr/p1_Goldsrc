@@ -15,9 +15,17 @@
         </apex:pageBlockTable>
     </apex:pageBlock>
     
-    <h1>
-        Your Account
-    </h1>
-        
-    
+    <apex:form >
+       <apex:pageBlock title="Submit a Review">
+        <apex:pageBlockSection >
+            <apex:inputField value="{!gameReview.Name }"/>
+            <apex:inputField value="{!gameReview.Review__c }"/>
+            <apex:inputField value="{!gameReview.User_Star_Rating__c }"/>
+            <apex:inputField value="{!gameReview.My_Game__c }"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons location="bottom">
+            <apex:commandButton action="{!CreateReview}" value="Submit Review" />
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+    </apex:form>
 </apex:page>

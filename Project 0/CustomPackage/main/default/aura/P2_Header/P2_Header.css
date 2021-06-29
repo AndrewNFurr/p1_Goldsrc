@@ -1,0 +1,14 @@
+.THIS {
+    min-height: 100px;
+    text-align: center;
+    background-image: linear-gradient(black, grey);
+    min-width: 100%;
+
+}
+
+.THIS h1 {
+   font-size: 50px;
+   color: white;
+        text-align: center;
+
+}

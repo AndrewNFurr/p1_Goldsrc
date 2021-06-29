@@ -1,12 +1,21 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "CustomPackage",
+            "package": "Project_0",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": true
+        }
+    ],
+    "name": "Project 0",
+    "namespace": "",
+    "sfdcLoginUrl": "https://resilient-fox-4u202z-dev-ed.lightning.force.com/",
+    "sourceApiVersion": "51.0",
+    "packageAliases": {
+        "Project_0": "0Ho5e000000Gn8rCAC",
+        "Project_0@0.1.0-1": "04t5e000000yVpuAAE"
     }
-  ],
-  "name": "Project 0",
-  "namespace": "",
-  "sfdcLoginUrl": "https://wise-impala-13sax9-dev-ed.lightning.force.com/",
-  "sourceApiVersion": "51.0"
+
 }
+
